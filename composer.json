@@ -1,0 +1,25 @@
+{
+    "name": "albertoarena/fluidity",
+    "description": "Fluidity for PHP, a library for injection of methods and properties, and creation of class-cross \"fluid\" methods",
+    "keywords": ["fluidity", "query language"],
+    "license": ["MIT", "GPLv2", "BSD-3"],
+    "authors": [
+        {
+            "name": "Alberto Arena",
+            "email": "arena.alberto@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0",
+        "phpunit/phpunit": "~4.7@dev"
+    },
+    "version": "0.1",
+    "autoload": {
+        "psr-0": {
+            "Fluidity": "src/"
+        }
+    }
+}
