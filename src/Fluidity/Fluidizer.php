@@ -14,7 +14,7 @@ namespace Fluidity;
 use Fluidity\Fluid\Settings;
 
 
-class Fluidizer
+final class Fluidizer
 {
     /** @var array */
     protected static $methods = array();
