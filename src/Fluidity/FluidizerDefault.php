@@ -44,8 +44,7 @@ class FluidizerDefault
             $properties = $object->properties();
             if (empty($properties)) {
                 return json_encode($object->get());
-            }
-            else {
+            } else {
                 return json_encode(array_map(function ($v) {
                     return $v->toFlat();
                 }, $properties));
@@ -54,13 +53,7 @@ class FluidizerDefault
 
         // Define a fluid method "length"
         Fluidizer::define('type', function ($object, $arguments) {
-            //$flat = $object->toFlat();
-            if ($object instanceof Member) {
-                return gettype($object->get());
-            } /* else {
-                return gettype($flat);
-            }
-            */
+            return gettype($object->get());
         });
 
         // Define a fluid method "length"
